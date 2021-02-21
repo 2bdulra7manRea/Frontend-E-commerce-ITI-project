@@ -8,7 +8,7 @@ export class ItemService{
 
 
 public count:number=0;
-public baseUrl="https://mearn-stack-backend-test.herokuapp.com/";
+public baseUrl=process.env.NODE_SERVER;
 public cartItems:typeItem[]=[];
 constructor(public clint:HttpClient){}
 
